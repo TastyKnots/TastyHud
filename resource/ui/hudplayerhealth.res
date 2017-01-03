@@ -5,9 +5,9 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"HudPlayerHealth"
-		"xpos"			"560"		[$WIN32]
+		"xpos"			"c-260"		[$WIN32]
 		"xpos_minmode"	"-5"		[$WIN32]
-		"ypos"			"300"	[$WIN32]
+		"ypos"			"c70"	[$WIN32]
 		"ypos_minmode"	"r88"	[$WIN32]
 		"xpos"			"32"	[$X360]
 		"ypos"			"r144"	[$X360]
@@ -30,8 +30,8 @@
 		"zpos"			"4"
 		"wide"			"51"
 		"tall"			"51"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"scaleImage"	"1"	
 	}		
 	"PlayerStatusHealthImageBG"
@@ -42,10 +42,10 @@
 		"xpos_minmode"	"58"
 		"ypos"			"33"
 		"zpos"			"3"
-		"wide"			"55"
-		"tall"			"55"
-		"visible"		"1"
-		"enabled"		"1"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+		"enabled"		"0"
 		"image"			"../hud/health_bg"
 		"scaleImage"	"1"	
 	}	
@@ -75,20 +75,62 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValue"
-		"xpos"			"76"
+		"xpos"			"0"
 		"xpos_minmode"	"61"
-		"ypos"			"52"	[$WIN32]
+		"ypos"			"0"	[$WIN32]
 		"ypos"			"55"	[$X360]
 		"zpos"			"5"
-		"wide"			"50"
-		"tall"			"16"
+		"wide"			"250"
+		"tall"			"120"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%Health%"
 		"textAlignment"	"center"	
-		"font"			"GravityRegular16"
-		"fgcolor"		"TanDark"
+		"font"			"GravityRegular42"
+		"fgcolor"		"255 255 255 255"
 	}								
+	"PlayerStatusHealthValueBG"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"PlayerStatusHealthValue"
+		"xpos"			"2"
+		"xpos_minmode"	"61"
+		"ypos"			"2"	[$WIN32]
+		"ypos"			"55"	[$X360]
+		"zpos"			"5"
+		"wide"			"250"
+		"tall"			"120"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%Health%"
+		"textAlignment"	"center"	
+		"font"			"GravityRegular42"
+		"fgcolor"		"0 0 0 120"
+	}
+	"HPTeamIndicator"
+	{
+		"ControlName"		"CTFImagePanel"
+		"fieldName"		"HPBackgroundPanel1"
+		"xpos"			"88"
+		"ypos"			"48"
+		"zpos"			"10"
+		"wide"			"3"
+		"tall"	 		"26"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible" "1" 
+		"enabled" "1"
+		"image"			"../hud/color_panel_brown"
+		"scaleImage"		"1"
+		"teambg_1"		"../hud/color_panel_brown"
+		"teambg_2"		"../hud/color_panel_red"
+		"teambg_3"		"../hud/color_panel_blu"
+		
+		"src_corner_height"		"40"				// pixels inside the image
+		"src_corner_width"		"40"			
+		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 		"0"	
+	}	
 	"PlayerStatusBleedImage"
 	{
 		"ControlName"	"ImagePanel"
